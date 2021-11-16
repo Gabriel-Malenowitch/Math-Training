@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles/global.css">
+    <title>Resolva</title>
+</head>
+<body>
+    <div>
+        <h1>Escolha um tipo de operação: </h1>
+        <ul>
+            <li><a id="multply" href="./page.html">Multiplicação</a></li>
+            <li><a id="division" href="./page.html">Divisão</a></li>
+            <li><a id="adiction" href="./page.html">Adição</a></li>
+            <li><a id="subtration" href="./page.html">Subtração</a></li>
+        </ul>
+        <br><br><br><br><br>
+        <p>Se você busca melhorar a velocidade de suas operações matemáticas e sua velocidade de raciocínio, veio ao lugar certo, seja bem vindo(a)!</p>
+    </div>
+
+    <script>
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+
+        document.getElementById('multply').addEventListener('click', ()=>document.cookie = 'multiply')
+        document.getElementById('division').addEventListener('click', ()=>document.cookie = 'division')
+        document.getElementById('adiction').addEventListener('click', ()=>document.cookie = 'adiction')
+        document.getElementById('subtration').addEventListener('click', ()=>document.cookie = 'subtration')
+    </script>
+</body>
+</html>

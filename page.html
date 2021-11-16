@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/stylePage.css">
+    <title>Math Test</title>
+</head>
+<body>
+
+    <div>
+        <div id="fun" >
+            <div class="container">
+                <div id="text"></div>
+                <input type="number" placeholder="Sua resposta" autofocus name="answer" id="answer">
+                <div id="averageTime"></div>
+            </div>
+            <div id="answered"></div>
+        </div>
+        <br><br><br><br><br>
+        <span>Pressione</span>
+        <ul>
+            <li>"/" Para o programa mostrar ou não os resultados</li>
+            <li>"Enter" para o programa resetar após você acertar a resposta</li>
+            <span>O fundo da página ficará verde após o acerto da resposta</span>
+        </ul>
+        <br><br><br><br><br>
+        <h2>Por favor digite 2 números para servir de minimo e máximo para que o programa possa criar as contas:</h2>
+        <p>Caso não digite, os valores serão "0" e "100".</p>
+        <input type="text" id="min" placeholder="Minimo">
+        <input type="text" id="max" placeholder="Máximo">
+    </div>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
